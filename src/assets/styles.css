@@ -1,0 +1,47 @@
+:root {
+  --gap-1: 1rem;
+  --gap-2: 2rem;
+  --gap-3: 3rem;
+  --background: hsl(261, 56%, 18%);
+  --text: hsl(0, 0%, 90%);
+  --primary: hsl(53, 18%, 70%);
+  --primary: hsl(53, 18%, 70%);
+  --primary-dark: hsl(53, 18%, 60%);
+  --error: hsl(347, 100%, 61%);
+  --radius: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+body {
+  color: var(--text);
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--background)
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap-1);
+}
+
+button {
+  font-size: inherit;
+  border-radius: var(--radius);
+  outline: none;
+  padding: 8px;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+}
