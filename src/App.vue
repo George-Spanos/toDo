@@ -24,7 +24,7 @@ function deleteItem(index: number) {
       <h1 class="title">Take Notes!</h1>
       <form @submit.prevent="addNote()">
         <input type="text" v-model="content">
-        <button class="submit" type="submit"><img src="/icons/add.svg" alt=""> </button>
+        <button class="submit" type="submit" title="press enter to add a todo">+</button>
       </form>
     </header>
     <p class="empty" v-if="!notes.length">There are no notes</p>
@@ -60,12 +60,13 @@ header {
 }
 
 .submit {
-  padding: 2px 2px 0px 2px;
+  padding: 6px 8px;
 }
 
 .notes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 </style>
